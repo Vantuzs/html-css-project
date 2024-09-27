@@ -1,0 +1,37 @@
+h1,
+h2,
+h3 {
+  /* tag selector 0.0.1 */
+  font-size: 100px;
+  background-color: aquamarine;
+  width: fit-content;
+}
+p {
+  /* Селектор за типом тега - 0.0.1 */
+  /* color: gray -- word */
+  /* color rgb(12,12,48) -- rgb */
+  /* color rgba(124,12,87,0.9) -- rgb + alpfa channel */
+  /* Hex-code */
+  color: #aaaaac;
+  /* font-size: 33pt; -- typographic punkts */
+  /* px */
+  font-size: 30px;
+}
+
+#heading {
+  /* Селектор за id - 1.0.0*/
+  color: black;
+  font-size: 40px;
+}
+
+.greentext {
+  /* Селектор за класом - 0.1.0*/
+  color: green;
+}
+.pink-text {
+  color: pink;
+}
+.font-size-large {
+  font-size: 60px;
+}
+/* inline style 1.0.0.0 */
