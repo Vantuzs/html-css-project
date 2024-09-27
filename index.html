@@ -6,7 +6,13 @@
     <title>Learn HTML & CSS</title>
 
     <style>
-        p {
+      h1,h2,h3 { /* tag selector 0.0.1 */
+        font-size: 100px;
+        background-color: aquamarine;
+        width: fit-content;
+        
+      }
+        p {  /* Селектор за типом тега - 0.0.1 */
             /* color: gray -- word */
             /* color rgb(12,12,48) -- rgb */
             /* color rgba(124,12,87,0.9) -- rgb + alpfa channel */
@@ -16,10 +22,34 @@
           /* px */
           font-size: 30px;
         }
+
+        #heading {    /* Селектор за id - 1.0.0*/
+          color: black;
+          font-size: 40px;
+        }
+
+        .greentext{    /* Селектор за класом - 0.1.0*/
+          color: green;
+        }
+        .pink-text{
+          color: pink;
+        }
+        .font-size-large {
+          font-size: 60px;
+        }
+        /* inline style 1.0.0.0 */
     </style>
   </head>
   <body>
+    <h1 class="greentext pink-text">Heading</h1> 
     <!-- ctrl + .(dot cotoraya vozle shifta) - быстрое создание коментариев) -->
+    <p>Lorem ipsum dolor <Span class="greentext">sit amet, consectetur adipisicing elit.</Span> Eaque, cum.</p>
+    <article>
+      <h2 id="heading">Супер <span class="greentext font-size-large">мега</span> Кастрюля</h2>
+    </article>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, cum.</p>
+    <p style="color: red;">BOBA <span class="greentext">SSSS</span> TUTUTUT</p>
+    <p style="color: black;">bobobo</p>
+    <p>bibib</p>
   </body>
 </html>
