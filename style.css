@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Lilita One';
+  src: url('./fonts/LilitaOne-Regular.ttf');
+}
+
+
+
 h1,
 h2,
 h3 {
@@ -21,6 +28,7 @@ p {
      /* 1em - равен значеню размера шрифта родительского тега (в данном случае 1em=30px) */
   line-height: 2em;
   text-align: justify;
+  font-family: Lilita One;
 }
 
 #heading {
@@ -65,7 +73,7 @@ line-height - висота линии
 text-transform - приведення до якогось певного регитру
 text-decoration - керування линиями под текстом (что бы убрать с посылания подкресливание)
 font-waight - сделать текст жирным(bolt)
-
+font-family - обрати семейство шрифтов
 
 
 
