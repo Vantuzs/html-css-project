@@ -6,16 +6,21 @@ h3 {
   background-color: aquamarine;
   width: fit-content;
 }
+body{
+  font-size: 20px;
+}
 p {
   /* Селектор за типом тега - 0.0.1 */
   /* color: gray -- word */
   /* color rgb(12,12,48) -- rgb */
   /* color rgba(124,12,87,0.9) -- rgb + alpfa channel */
   /* Hex-code */
-  color: #aaaaac;
+  
   /* font-size: 33pt; -- typographic punkts */
   /* px */
-  font-size: 30px;
+     /* 1em - равен значеню размера шрифта родительского тега (в данном случае 1em=30px) */
+  line-height: 2em;
+  text-align: justify;
 }
 
 #heading {
@@ -35,3 +40,35 @@ p {
   font-size: 60px;
 }
 /* inline style 1.0.0.0 */
+#btn1{
+  text-transform: uppercase;
+}
+#btn2{
+  text-transform: lowercase;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+
+
+
+
+
+/* 
+font-size - Размер шрифта
+color - цвет текста
+background-color - цвет заднего фона
+line-height - висота линии
+text-transform - приведення до якогось певного регитру
+text-decoration - керування линиями под текстом (что бы убрать с посылания подкресливание)
+font-waight - сделать текст жирным(bolt)
+
+
+
+
+
+
+*/
