@@ -1,6 +1,4 @@
-.body {
-  color: aqua;
-}
+
 .main-article{
   font-size: 60px;
   color: green;
@@ -26,9 +24,7 @@
   color: inherit;
 }
 
-.divas{
-  width: 40px;
-}
+
 
 .image{
   width: 300px;
@@ -51,10 +47,16 @@ padding-left  */
 /* Маржини - синтаксично работают как Padiing */
 /* padding - про пространство между рамкой и контентом */
 /* margin - про видношення до инших елементов*/
-margin-left: 100px;
+
 
 
 }
 
+span,span{
+ 
+  display: block;
+}
 
-
+div{
+  display: inline;
+}
