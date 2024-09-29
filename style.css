@@ -1,84 +1,41 @@
-@font-face {
-  font-family: 'Lilita One';
-  src: url('./fonts/LilitaOne-Regular.ttf');
+.body {
+  color: aqua;
 }
-
-
-
-h1,
-h2,
-h3,h4,h5,h6{
-  /* tag selector 0.0.1 */
-  font-size: 100px;
-  line-height: 1.4em;
-  background-color: aquamarine;
-  width: fit-content;
-  text-transform: uppercase;
-}
-body{
-  font-size: 20px;
-}
-p {
-  /* Селектор за типом тега - 0.0.1 */
-  /* color: gray -- word */
-  /* color rgb(12,12,48) -- rgb */
-  /* color rgba(124,12,87,0.9) -- rgb + alpfa channel */
-  /* Hex-code */
-  
-  /* font-size: 33pt; -- typographic punkts */
-  /* px */
-     /* 1em - равен значеню размера шрифта родительского тега (в данном случае 1em=30px) */
-  line-height: 2em;
-  text-align: justify;
-  font-family: Lilita One;
-}
-
-#heading {
-  /* Селектор за id - 1.0.0*/
-  color: black;
-  font-size: 40px;
-}
-
-.greentext {
-  /* Селектор за класом - 0.1.0*/
-  color: green;
-}
-.pink-text {
-  color: pink;
-}
-.font-size-large {
+.main-article{
   font-size: 60px;
+  color: green;
+  border: 10px ridge black;
 }
-/* inline style 1.0.0.0 */
-#btn1{
-  text-transform: uppercase;
+
+
+.article-header{
+  color: red;
+  border: inherit;
+  line-height: 2.5em;
+ background-color: black;
+  text-align: center;
+  
 }
-#btn2{
-  text-transform: lowercase;
+.article-content{
+  color: gold;
+  background-color: rgb(109, 0, 252);
+  
 }
-a{
+.article-link{
   text-decoration: none;
-  color: pink;
-  font-weight: 700;
+  color: inherit;
+}
+
+.divas{
+  width: 40px;
+}
+
+.image{
+  width: 300px;
+  /* height: 300px; */
+  border: 3px solid red;
+  box-sizing: border-box;
 }
 
 
-
-
-
-
-/* 
-font-size - Размер шрифта
-color - цвет текста
-background-color - цвет заднего фона
-line-height - висота линии
-text-transform - приведення до якогось певного регитру
-text-decoration - керування линиями под текстом (что бы убрать с посылания подкресливание)
-font-waight - сделать текст жирным(bolt)
-font-family - обрати семейство шрифтов
-
-
-
-
-
-*/
+/* width(ширина) = content + padding(Внутриние отступы) + borders(размер-ширину линии рамочки) */
