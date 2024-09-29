@@ -1,69 +1,16 @@
 
-.main-article{
-  font-size: 60px;
-  color: green;
-  border: 10px ridge black;
-}
-
-
-.article-header{
-  color: red;
-  border: inherit;
-  line-height: 2.5em;
- background-color: black;
-  text-align: center;
-  
-}
-.article-content{
-  color: gold;
-  background-color: rgb(109, 0, 252);
-  
-}
-.article-link{
-  text-decoration: none;
-  color: inherit;
-}
-
 
 
 .image{
-  width: 300px;
-  /* height: 300px; */
-/* width(ширина) = content + padding(Внутриние отступы) + borders(размер-ширину линии рамочки) */
-  border: 3px solid red;
-  box-sizing: border-box;
-  padding: 10px;
-  /* padding: top right bottom left */
-/* padding: 10px 5px 10xp 5px */
-/* padding: top left-right bottom */
-/* padding: top-bottom left right */
-/* padding: all(top right bottom left) */
-/* кроме скороченого padding ще есть такие варики
-padding-top
-padding-right
-padding-bottom
-padding-left  */
-
-/* Маржини - синтаксично работают как Padiing */
-/* padding - про пространство между рамкой и контентом */
-/* margin - про видношення до инших елементов*/
-
-
-
-}
-
-span,span{
- 
   display: block;
-}
-
-div{
-  display: inline;
-}
-img {
-  border-radius: 100%;
-  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
   width: 300px;
-  object-fit: cover;
-  object-position: -50px ;
+ height: 300px;
+object-fit: cover;
+}
+.card-wrapper {
+  border: 3px solid black;
+  width: 500px;
+  height: 350px;
 }
