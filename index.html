@@ -7,16 +7,82 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   <img src="./pictures/951951-1.jpg" alt="" class="image1">
-   <img src="./pictures/_____.webp" alt="" class="image2">
-   <img src="./pictures/memi-klev-club-hu1x-p-memi-negr-yest-kuritsu-1.jpg" alt="" class="image3">
-  <div class="divas1">
-    <div class="divas2">
-      
-    </div>
-    <div class="divas3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam consequatur, voluptatum rem nostrum fugiat amet ad vitae deleniti iusto error eius harum architecto sapiente neque mollitia perferendis quam magni veritatis beatae ducimus modi delectus maxime porro. Asperiores odit vel debitis molestiae obcaecati dicta quia magni cupiditate animi in recusandae, ullam provident iste! Dolorem accusantium quasi repudiandae atque laborum debitis eos sequi animi mollitia qui, deleniti expedita porro tenetur dolorum dolor architecto hic minus voluptas, earum ullam. Quae expedita eveniet fuga alias, dolores quibusdam, iste eligendi adipisci consequuntur quidem ipsam ipsa!</div>
+   <table>
+    <caption>Taxes</caption>
+    <thead>
+      <tr>
+        <th class="foot"></th>
+        <th class="foot">Week day</th>
+        <th class="foot">Taxes</th>
+      </tr>
 
-  </div>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>Monday</td>
+        <td class="text-center">10$</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Tuesday</td>
+        <td class="text-center">15$</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Wenesday</td>
+        <td class="text-center">9$</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Thirsday</td>
+        <td class="text-center">10$</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Friday</td>
+        <td class="text-center">12$</td>
+        <td>Free for the employees</td>
+      </tr>
+      <tr>
+        <td rowspan="2">6-7.</td>
+        <td rowspan="2">Weekend</td>
+        <td class="text-center">25$ for employees</td>
+        <tr>
+          <td class="text-center">35$ for all others</td>
+        </tr>
+      </tr>
+    </tbody>
+
+    <tfoot class="foot">
+      <tr class="foot">
+        <th colspan="2" class="foot">Total:</th>
+        <td colspan="2" class="text-center">$$$</td>
+      </tr>
+    </tfoot>
+
+
+   </table>
   
   </body>
 </html>
+
+
+<!-- 
+<table> - тег с которого начинаеться таблица
+  <thead> - название столбцов таблици
+    <tbody> - тело нашей таблици(семантичный тег (для нас))
+  <tfoot> - нижний колонтитул нашей таблици (семантичный тег(для нас))
+    
+    <caption> - визначае назву таблици (текст автоматично центруеться у таблице)
+
+    <tr> -створити рядог таблици
+
+      всередине рядка таблици мы создаем комирки
+      комирки бывают двух типов
+      <th> - комирка заголовок(текст выделяеться жирным шрифтом + центруеться)
+        <td> - звичайна комирка таблици
+
+ -->
