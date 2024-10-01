@@ -16,13 +16,27 @@
 .page-link:focus{
     border: 5px solid green;
 }
+.page-link:active{
+    background-color: orange;
+    color: black;
+}
+input:focus{
+    background-color: aqua;
+    color: yellow;
+}
 
+input:hover{
+    background-color: black;
+    color: white;
+}
+input:active{
+    background-color: orange;
+    color: red;
+}
 /* 
-inline-block::
-- розташовуеться послидовно в рядку
-- размер визначаеться по контенту (как в inline елементах)
+hover - срабатывает при наведении на елемент мышкой
+focus - срабатывает при фокусе на елемент мышкой или за допомогою кавиши "TAB"
+active - срабатывает при нажатии на посилание
 
-- елемент завжди прямокутный (как в block елементах)
-- працюють властивости яки визначають ширину и высоту width / height (как в block елементах)
 
 */
