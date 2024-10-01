@@ -33,12 +33,69 @@ input:active{
     background-color: orange;
     color: red;
 }
-li:first-child{
+
+
+/*
+ Задача!!!!
+
+выбрать все елементы после третего (тоесть начиная с четвёртого елемента)
+
+*/
+
+/* li:nth-child(n+4){
+    color: blue;
+} */
+
+
+
+
+/*
+Задача!!!!
+выбрать каждый третий елемент начиная с первого 
+ */
+ /*  An + b  */
+ /* 
+    A - яки саме числа нас будут интересовать
+    B - елемент с которого мы начинаем
+ */
+ /* li:nth-child(2n+1){
+    color: blue;
+ } */
+
+/* 
+Задача!!!!
+Выбрать только первые 5 елементов
+
+Li:nth-child(-N+5){
+ color: blue;
+}
+
+*/
+
+
+
+
+/* li:nth-child(){
+    color: tomato;
+    background-color: bisque;
+} */
+
+
+/* li:nth-child(odd){
+    color: green;
+    background-color: yellow;
+}
+li:nth-child(even){
+    background-color: aqua;
+    color: blueviolet;
+} */
+
+/* li:first-child{
     color: blue;
 }
 li:last-child{
     color: blue;
-}
+} */
 /* Псевдокласы
 hover - срабатывает при наведении на елемент мышкой
 focus - срабатывает при фокусе на елемент мышкой или за допомогою кавиши "TAB"
