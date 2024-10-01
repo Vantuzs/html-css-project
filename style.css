@@ -1,0 +1,25 @@
+.link-list li{
+  display: inline-block;  
+  margin-top: 30px;
+}
+.page-link{
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 10px;
+    color: yellow;
+
+}
+.page-link:hover{
+    background-color: slateblue;
+    color: red;
+}
+
+/* 
+inline-block::
+- розташовуеться послидовно в рядку
+- размер визначаеться по контенту (как в inline елементах)
+
+- елемент завжди прямокутный (как в block елементах)
+- працюють властивости яки визначають ширину и высоту width / height (как в block елементах)
+
+*/
