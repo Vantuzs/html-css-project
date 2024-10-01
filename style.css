@@ -3,7 +3,8 @@ table{
   border: 2px solid black;
 }
 td,th{
-  border: 1px solid black;
+  border: 2px solid black;
+  border-collapse: collapse;
 }
 caption{
   color: rgb(255, 95, 122);
