@@ -1,36 +1,6 @@
-div{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+.paragraf{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    
 }
-
-
-div:nth-child(odd){
-    background-color: red;
-}
-div:nth-child(even){
-    background-color: green;
-}
-
-div:nth-child(3n+3){
-    background-color: blue;
-}
-/* 
-
-Завдання!!
-зробити такий колир тла (backgroundcolor) для квадратиков
-1 - червоний
-2 - зеленый
-3 - синий 
-4 - зеленый
-5- червоний
-6 - синий
-7 - червоний
-8- зеленый
-червоний - 1 5 7
-зелений - 2 4 8
-синий 3 6
-
-Без класов(((((((
-
-*/
