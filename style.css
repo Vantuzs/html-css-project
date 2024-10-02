@@ -1,106 +1,36 @@
-.link-list li{
-  display: inline-block;  
-  margin-top: 30px;
-}
-.page-link{
-    text-decoration: none;
-    background-color: lightblue;
-    padding: 10px;
-    color: yellow;
-
-}
-.page-link:hover{
-    background-color: slateblue;
-    color: red;
-}
-.page-link:focus{
-    border: 5px solid green;
-}
-.page-link:active{
-    background-color: orange;
-    color: black;
-}
-input:focus{
-    background-color: aqua;
-    color: yellow;
-}
-
-input:hover{
-    background-color: black;
-    color: white;
-}
-input:active{
-    background-color: orange;
-    color: red;
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
 }
 
 
-/*
- Задача!!!!
+div:nth-child(odd){
+    background-color: red;
+}
+div:nth-child(even){
+    background-color: green;
+}
 
-выбрать все елементы после третего (тоесть начиная с четвёртого елемента)
-
-*/
-
-/* li:nth-child(n+4){
-    color: blue;
-} */
-
-
-
-
-/*
-Задача!!!!
-выбрать каждый третий елемент начиная с первого 
- */
- /*  An + b  */
- /* 
-    A - яки саме числа нас будут интересовать
-    B - елемент с которого мы начинаем
- */
- /* li:nth-child(2n+1){
-    color: blue;
- } */
-
+div:nth-child(3n+3){
+    background-color: blue;
+}
 /* 
-Задача!!!!
-Выбрать только первые 5 елементов
 
-Li:nth-child(-N+5){
- color: blue;
-}
+Завдання!!
+зробити такий колир тла (backgroundcolor) для квадратиков
+1 - червоний
+2 - зеленый
+3 - синий 
+4 - зеленый
+5- червоний
+6 - синий
+7 - червоний
+8- зеленый
+червоний - 1 5 7
+зелений - 2 4 8
+синий 3 6
 
-*/
-
-
-
-
-/* li:nth-child(){
-    color: tomato;
-    background-color: bisque;
-} */
-
-
-/* li:nth-child(odd){
-    color: green;
-    background-color: yellow;
-}
-li:nth-child(even){
-    background-color: aqua;
-    color: blueviolet;
-} */
-
-/* li:first-child{
-    color: blue;
-}
-li:last-child{
-    color: blue;
-} */
-/* Псевдокласы
-hover - срабатывает при наведении на елемент мышкой
-focus - срабатывает при фокусе на елемент мышкой или за допомогою кавиши "TAB"
-active - срабатывает при нажатии на посилание
-first-child - застосовуе правила до першого елемента вкаденого в батькивский елемент 
-last-child - застосовуе правила до останього елемента вкаденого в батькивский елемент (працюе як first-child , только шукае последний елемент)
+Без класов(((((((
 
 */
