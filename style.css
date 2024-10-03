@@ -1,6 +1,48 @@
-.paragraf{
-    position: relative;
-    left: 50px;
-    top: 50px;
-    
+.container{
+ background-color: lime;
+ height: 800px;
+ width: 80%;
+ margin: 0 auto;
 }
+
+.wrapper{
+background-color: dodgerblue;
+width: 80%;
+height: inherit;
+}
+
+.inner{
+    text-align: center;
+    font-size: 40px;
+    width: 80px; 
+     height: 80px; 
+    background-color: forestgreen;
+    border: 1px solid black;
+}
+.div1{
+/* position: fixed; */
+}
+
+.div2{
+position: relative;
+top: 10px;
+left: 20px;
+}
+
+.div3{
+position: fixed;
+top: 0;
+}
+
+
+.div4{
+
+}
+
+
+
+/* 
+absolute - (Относительное позиционирование) - когда мы позиционируемся относительно места в нормальном потоке
+fixed - (фиксованное позиционирование) - когда мы позиционируемся относительно вьюпорта. При тому елемент вырываеться с макета документа
+
+*/
