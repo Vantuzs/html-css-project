@@ -20,39 +20,92 @@ height: inherit;
     border: 1px solid black;
 }
 .div1{
-position: fixed;
+position: absolute;
+top: 200px;
 background-color: rgb(0, 253, 253);
-top: 0;
-left: 0;
+
 }
 
 .div2{
-position: fixed;
-top: 0;
-right: 0px;
+position: relative;
+top: 10px;
+left: 20px;
 background-color: yellow;
 }
 
 .div3{
 position: fixed;
-bottom: 0;
-left: 0;
+text-align: center px;
+font-size: 20px;
+top: 40%;
+left: 35%;
+
+
+width: 300px;
+height: 200px;
 background-color: blueviolet;
 }
 
 
 .div4{
-position: fixed;
-bottom: 0;
-right: 0;
 background-color: brown;
+position: absolute;
+}
+
+.div5{
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    background-color: chocolate;
+    position: fixed;
+}
+
+.div6{
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    background-color: chocolate;
+    position: fixed;
+}
+
+.coco{
+border: 1px solid black;
+width: 90px;
+height: 30px;
+margin-left: 100px;
 
 }
 
+.caca{
+border: 1px solid black;
+width: 90px;
+height: 30px;
+margin-left: 100px;
+}
+tr , tr ,td{
+    border: 1px solid black;
 
+    
+}
+.tdd{
+margin: 100px;
+}
+.dodo{
+    border: 1px solid black;
+    display:   inline-block;
+    width: 100px;
+    height: 40px;
+}
+.did{
 
+}
+.dod{
+    margin-left: 1000px;
+}
 /* 
 relative - (Относительное позиционирование) - когда мы позиционируемся относительно места в нормальном потоке
 fixed - (фиксованное позиционирование) - когда мы позиционируемся относительно вьюпорта. При тому елемент вырываеться с макета документа
+absolute (абсолютное позицирование) - когда мы позиционируемся относительно ближайщего нестатического позиционированного родственика. Елемент вырываеться из потока 
+
 
 */
