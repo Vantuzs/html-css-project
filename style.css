@@ -1,8 +1,11 @@
 p{
     color: blue;
+    cursor: col-resize;
 }
-p::first-line{
-    color: red;
+p::selection{
+    color: pink;
     font-size: 20px;
     font-style: italic;
+    background-color: blueviolet;
+    cursor: crosshair;
 }
