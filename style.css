@@ -1,111 +1,87 @@
-.container{
- background-color: lime;
- height: 800px;
- width: 80%;
- margin: 0 auto;
+.nav-list{
+margin: 0;
+padding: 0;
+font-size: 0;
 }
 
-.wrapper{
-background-color: dodgerblue;
-width: 80%;
-height: inherit;
-}
-
-.inner{
-    text-align: center;
-    font-size: 40px;
-    width: 80px; 
-     height: 80px; 
-    background-color: forestgreen;
-    border: 1px solid black;
-}
-.div1{
-position: absolute;
-top: 200px;
-background-color: rgb(0, 253, 253);
+.list-item{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(255, 106, 52);
+    
 
 }
 
-.div2{
-position: relative;
-top: 10px;
-left: 20px;
-background-color: yellow;
-}
 
-.div3{
-position: fixed;
-text-align: center px;
-font-size: 20px;
-top: 40%;
-left: 35%;
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 
-
-width: 300px;
-height: 200px;
-background-color: blueviolet;
-}
-
-
-.div4{
-background-color: brown;
-position: absolute;
-}
-
-.div5{
-    width: 50px;
-    height: 50px;
-    border: 1px;
-    background-color: chocolate;
-    position: fixed;
-}
-
-.div6{
-    width: 50px;
-    height: 50px;
-    border: 1px;
-    background-color: chocolate;
-    position: fixed;
-}
-
-.coco{
-border: 1px solid black;
-width: 90px;
-height: 30px;
-margin-left: 100px;
 
 }
-
-.caca{
-border: 1px solid black;
-width: 90px;
-height: 30px;
-margin-left: 100px;
+.list-item:hover{
+    background-color: rgb(184, 79, 41);
 }
-tr , tr ,td{
-    border: 1px solid black;
-
+.list-item:hover .sub-list-item{
+    /* border: 1px solid black; */
+display: block;
     
 }
-.tdd{
-margin: 100px;
-}
-.dodo{
-    border: 1px solid black;
-    display:   inline-block;
-    width: 100px;
-    height: 40px;
-}
-.did{
+
+.sub-nav-list{
+    position: absolute;
+    top: 62px;
+    left: -40px;
+    display: block;
+    width: 150px;
 
 }
-.dod{
-    margin-left: 1000px;
+
+.sub-list-item{
+    display: none;
+    background-color: rgb(255, 106, 52);
+    padding: 20px;
+
 }
-/* 
-relative - (Относительное позиционирование) - когда мы позиционируемся относительно места в нормальном потоке
-fixed - (фиксованное позиционирование) - когда мы позиционируемся относительно вьюпорта. При тому елемент вырываеться с макета документа
-absolute (абсолютное позицирование) - когда мы позиционируемся относительно ближайщего нестатического позиционированного родственика. Елемент вырываеться из потока 
+
+.sub-sub-nav-list{
+position: absolute;
+top: 125px;
+left: 150px;
+display: block;
+width: 150px;
+}
+
+.sub-sub-list-item{
+    display: none;
+    background-color: rgb(255, 106, 52);
+    padding: 20px;
+}
+.sub-list-item:hover .sub-sub-list-item{
+    display: block;
 
 
-*/
+}
+
+.sub-sub-sub-nav-list{
+    position: absolute;
+    top: 125px;
+    left: 150px;
+    display: block;
+    width: 150px;
+}
+
+.sub-sub-sub-list-item{
+    display: none;
+    background-color: rgb(255, 106, 52);
+    padding: 20px;
+}
+
+.sub-sub-list-item:hover .sub-sub-sub-list-item{
+    display: block;
+}
+.sub-list-item:hover, .sub-sub-list-item:hover,.sub-sub-sub-list-item:hover{
+    background-color: rgb(184, 79, 41);
+}
