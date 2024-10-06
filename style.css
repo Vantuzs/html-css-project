@@ -1,20 +1,24 @@
-/* 
-"*" - множинный селектор
-*/
-div * {
-    /* это стили для всех дочирних елементов div */
-    /* тут тип стили */
-}
-/* 
-"*" - так же универсальный селектор 
-*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Проблема: разные базовые стили, которые могут выдавать браузеры */
-/* 1 решение - универсальны селектор с базовыми правилами */
-/* 2 решение - reset.css  взять ресетник который полностью чистит все стили которые выдает браузер*/
-/* 3 решение - normalize.css - подключается точно также как reset.css и делает так что бы все стили были одинаковыми во всех браузерах*/
+.container{
+border: 1px solid black;
+display: flex;
+flex-direction:row;
+justify-content: space-evenly;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    border: 2px solid red;
+
+}
