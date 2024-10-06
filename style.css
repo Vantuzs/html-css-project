@@ -1,34 +1,20 @@
-p{
-    color: blue;
-    border: 1px solid black;
-    position: relative;
+/* 
+"*" - множинный селектор
+*/
+div * {
+    /* это стили для всех дочирних елементов div */
+    /* тут тип стили */
 }
-p::before{
-    color: red;
-    top: 5px;
-    left: 10px;
-    background-color: peachpuff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    content: '♥'; 
-position: absolute;
-    display: inline-block;
-    opacity: 0.5;
+/* 
+"*" - так же универсальный селектор 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-p::after{
-    color: red;
-    background-color: peachpuff;
-    width: 20px;
-    height: 20px;
-    bottom: 5px;
-    right: 10px;
-    opacity: 0.5;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    content: '♥'; 
-    display: inline-block;
-    
-}
+
+/* Проблема: разные базовые стили, которые могут выдавать браузеры */
+/* 1 решение - универсальны селектор с базовыми правилами */
+/* 2 решение - reset.css  взять ресетник который полностью чистит все стили которые выдает браузер*/
+/* 3 решение - normalize.css - подключается точно также как reset.css и делает так что бы все стили были одинаковыми во всех браузерах*/
