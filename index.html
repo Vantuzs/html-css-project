@@ -7,30 +7,18 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   <section class="card-container">
-    <div class="header"></div>
-    <article class="card">
-      <img class="user-img" src="./pictures/_____.webp" alt="user avatar">
-      <h2>Jonatan Robertson</h2>
-      <h3>Creative Manager</h3>
-
-      <section class="links">
-        <div class="divv">
-          <p>323</p>
-          <span>folowers</span>
-        </div>
-        <div class="divv">
-          <p>290</p>
-          <span>following</span>
-        </div>
-        <div class="divv">
-          <p>22</p>
-          <span>stories</span>
-        </div>
-      </section>
-    </article>
-   </section>
-   </div>
+  <form class="form">
+    <h2>Sing in</h2>
+    <!-- 1 способ: id -->
+    <label for="email-form">Type your email</label>
+    <input type="email" placeholder="Enter your email" autofocus id="email-form"/>
+    <!-- 2 способ: вкладення инпут в лейбл  -->
+    <label>Type your password
+      <input type="password" placeholder="Enter your password"/>
+    </label>
+    <button type="submit">Sing In</button>
+    <button type="reset">Reset</button>
+  </form>
   </body>
 </html>
 
