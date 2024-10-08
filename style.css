@@ -28,3 +28,9 @@ fieldset{
 input{
     margin: 0.4rem;
 }
+
+textarea{
+    resize: none;
+    height: 150px;
+    
+}
