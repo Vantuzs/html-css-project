@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-  <form class="form" action="" method="">
+  <form class="form">
     <h2>Sing in</h2>
     <label>
       Имя
-      <input type="name" placeholder="Штрих"  name="name"/>
+      <input type="name" placeholder="Вадим"  name="name" />
     </label>
     <!-- 1 способ: id -->
-    <label for="email-form">Enter your email</label>
-    <input type="email" placeholder="Example@mail.com" id="email-form" name="email"/>
+    <label>
+      Enter your email
+      <input type="text" placeholder="Example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
+    </label>
     <!-- 2 способ: вкладення инпут в лейбл  -->
-    <label for="password-form">Enter your password</label>
-    <input type="password" placeholder="qwerty123" id="password-form" name="password"/>
+    <label>Enter your password
+      <input type="password" placeholder="qwerty123"  name="password" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}/g"/>
+    </label>
     <label>
       Телефон:
       <input type="number" placeholder="0999292218"  name="number"/>
