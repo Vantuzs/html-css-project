@@ -16,11 +16,11 @@
     <!-- 1 способ: id -->
     <label>
       Enter your email
-      <input type="text" placeholder="Example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
+      <input   type="text" placeholder="Example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
     </label>
     <!-- 2 способ: вкладення инпут в лейбл  -->
     <label>Enter your password
-      <input type="password" placeholder="qwerty123"  name="password" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}/g"/>
+      <input  type="password" placeholder="qwerty123"  name="password" />
     </label>
     <label>
       Телефон:
@@ -34,6 +34,62 @@
       Дата народження
       <input type="date" placeholder="14.09.2005" name="date" />
     </label>
+    
+    <fieldset>
+      <legend>ВЫБЕРИ СВОЙ ГЕНДЕР!!!!!!!</legend>
+    <label>
+      <input type="radio" value="Male" name="gender" checked>
+      Male
+    </label>
+    <label>
+      <input type="radio" value="Female" name="gender">
+      Female
+    </label>
+
+    <label>
+      <input type="radio" value="Nonbinary" name="gender">
+      Nonbinary
+    </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Choose tour avatar</legend>
+      <input name="avatar" type="file" multiple  />
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Choose your city</legend>
+      
+      <select name="city">
+        <option value="Zaporija">
+          Запорожье
+        </option>
+        <option value="Dnipro">Днепр</option>
+        <option value="Kharkiv">Харьков</option>
+        <option value="Lviv">Львов</option>
+        <optgroup label="Запорожская обл.">
+          <option value="Zaporija">Запорожье</option>
+          <option value="Berdiansk">Бердянск</option>
+          <option value="Primorsk">Примоск<select>
+        
+        </optgroup>
+      </select>
+
+    </fieldset>
+
+
+    <label >
+      
+      <input required type="checkbox" name="Dota-player" checked/>
+      Сосал?
+    </label>
+
+    <label>
+      <input type="checkbox" name="Altushka" checked/>
+      Хочешь получить Альтушку?
+    </label>
+    
     <button type="submit">Sing In</button>
     <button type="reset">Reset</button>
   </form>
