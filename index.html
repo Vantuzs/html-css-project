@@ -7,14 +7,29 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-  <form class="form">
+  <form class="form" action="" method="">
     <h2>Sing in</h2>
+    <label>
+      Имя
+      <input type="name" placeholder="Штрих"  name="name"/>
+    </label>
     <!-- 1 способ: id -->
-    <label for="email-form">Type your email</label>
-    <input type="email" placeholder="Enter your email" autofocus id="email-form"/>
+    <label for="email-form">Enter your email</label>
+    <input type="email" placeholder="Example@mail.com" id="email-form" name="email"/>
     <!-- 2 способ: вкладення инпут в лейбл  -->
-    <label>Type your password
-      <input type="password" placeholder="Enter your password"/>
+    <label for="password-form">Enter your password</label>
+    <input type="password" placeholder="qwerty123" id="password-form" name="password"/>
+    <label>
+      Телефон:
+      <input type="number" placeholder="0999292218"  name="number"/>
+    </label>
+    <label>
+      Адреса:
+      <input type="text" placeholder="вул.Гипопотам, буд..." name="adress"/>
+    </label>
+    <label>
+      Дата народження
+      <input type="date" placeholder="14.09.2005" name="date" />
     </label>
     <button type="submit">Sing In</button>
     <button type="reset">Reset</button>
