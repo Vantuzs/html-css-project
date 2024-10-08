@@ -7,102 +7,75 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>Форма обратной связи</h1>
   <form class="form">
-    <h2>Sing in</h2>
-    <label>
-      Имя
-      <input type="name" placeholder="Вадим"  name="name" />
-    </label>
-    <!-- 1 способ: id -->
-    <label>
-      Enter your email
-      <input   type="text" placeholder="Example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
-    </label>
-    <!-- 2 способ: вкладення инпут в лейбл  -->
-    <label>Enter your password
-      <input  type="password" placeholder="qwerty123"  name="password" />
-    </label>
-    <label>
-      Телефон:
-      <input type="number" placeholder="0999292218"  name="number"/>
-    </label>
-    <label>
-      Адреса:
-      <input type="text" placeholder="вул.Гипопотам, буд..." name="adress"/>
-    </label>
-    <label>
-      Дата народження
-      <input type="date" placeholder="14.09.2005" name="date" />
-    </label>
-    
     <fieldset>
-      <legend>ВЫБЕРИ СВОЙ ГЕНДЕР!!!!!!!</legend>
-    <label>
-      <input type="radio" value="Male" name="gender" checked>
-      Male
-    </label>
-    <label>
-      <input type="radio" value="Female" name="gender">
-      Female
-    </label>
+      <legend>Личные данные</legend>
+      <label>
+        Имя:
+        <input required type="name" name="Name" id="">
+      </label>
+      <label>
+        Електронная почта:
+        <input required type="email" name="email">
+      </label>
+      <label>
+        Дата рождения:
+        <input required type="date" name="Date of birth">
+      </label>
 
-    <label>
-      <input type="radio" value="Nonbinary" name="gender">
-      Nonbinary
-    </label>
     </fieldset>
-
     <fieldset>
-      <legend>Choose tour avatar</legend>
-      <input name="avatar" type="file" multiple  />
+      <legend>Пол</legend>
+      <label>
+      <input required type="radio" name="Gender" value="Человек"> Человек 
+      </label>
+      <label>
+        <input required type="radio" name="Gender" value="Женщина"> Женщина 
+        </label>
+        <label>
+          <input required type="radio" name="Gender" value="Другое"> Другое 
+          </label>
     </fieldset>
-
-
     <fieldset>
-      <legend>Choose your city</legend>
-      
-      <select name="city">
-        <option value="Zaporija">
-          Запорожье
-        </option>
-        <option value="Dnipro">Днепр</option>
-        <option value="Kharkiv">Харьков</option>
-        <option value="Lviv">Львов</option>
-        <optgroup label="Запорожская обл.">
-          <option value="Zaporija">Запорожье</option>
-          <option value="Berdiansk">Бердянск</option>
-          <option value="Primorsk">Примоск<select>
-        
+      <legend>Дополнительные настройки</legend>
+      <label>
+        <input type="checkbox" name="Spam" value="on" checked> Подписатся на рассылку 
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>Выбирете категорию своих интересов</legend>
+      <select name="Interests">
+        <optgroup label="Технические">
+          <option value="Programming" >Програмирование</option>
+          <option value="Networks" >Сети</option>
+        </optgroup>
+        <optgroup label="Музыка">
+          <option value="Rock">Рок</option>
+          <option value="drum & bass">drum & bass</option>
         </optgroup>
       </select>
-
     </fieldset>
-
-    <label for="ice-cream-choise">Choise a flavor:</label>
-    <input list="ice-cream-flavor" id="ice-cream-choise" name="ice-cream-choise">
-<datalist id="ice-cream-flavor">
-  <option value="Chocolate"></option>
-  <option value="Coconout"></option>
-  <option value="Mint"></option>
-  <option value="Strawbarry"></option>
-  <option value="Vanilla"></option>
-</datalist>
-
-<textarea placeholder="Опишите себя)"></textarea>
-
-    <label >
-      
-      <input required type="checkbox" name="Dota-player" checked/>
-      Сосал?
-    </label>
-
-    <label>
-      <input type="checkbox" name="Altushka" checked/>
-      Хочешь получить Альтушку?
-    </label>
-    
-    <button type="submit">Sing In</button>
-    <button type="reset">Reset</button>
+    <fieldset>
+      <legend>Как вы узнали про нас?</legend>
+      <label >
+        <input type="checkbox" name="Found out" value="Search engines">Поисковые системы
+      </label>
+      <label>
+        <input type="checkbox" name="Found out" value="Social media">Социальные сети
+      </label>
+      <label>
+        <input type="checkbox" name="Found out" value="From friends/acquaintances">От друзей/знакомых
+      </label>
+      <label>
+        <input type="checkbox" name="Found out" value="Other">Другое
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Опишите свои ощущения/жалобы/пропозиции</legend>
+      <textarea name="Review"></textarea>
+    </fieldset>
+    <button class="Cnopka" type="submit">Отослать форму</button>
   </form>
   </body>
 </html>
