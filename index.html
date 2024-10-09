@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Kosugi+Maru&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="andika-bold">
     <h1>Форма обратной связи</h1>
   <form class="form">
     <fieldset>
       <legend>Личные данные</legend>
       <label>
         Имя:
-        <input required type="name" name="Name" id="">
+        <input required type="name" name="Name" placeholder="Вова" >
       </label>
       <label>
         Електронная почта:
-        <input required type="email" name="email">
+        <input required type="email" name="email" placeholder="Vova@gmail.com" pattern=" \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
       </label>
       <label>
         Дата рождения:
@@ -75,7 +78,7 @@
       <legend>Опишите свои ощущения/жалобы/пропозиции</legend>
       <textarea name="Review"></textarea>
     </fieldset>
-    <button class="Cnopka" type="submit">Отослать форму</button>
+    <button class="Cnopka"  type="submit">Отослать форму</button>
   </form>
   </body>
 </html>
