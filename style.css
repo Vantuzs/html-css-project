@@ -4,67 +4,20 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(./pictures/ракушка.jpg);
-    background-size: 100vw;
-    
-
-}
 
 
-  
-header{
-    
-    background-size: 100vw;
-    top: 40vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #926239;
-    font-size: 30px;
-}
-section{
+
+:root{
     font-size: 16px;
-    top: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: end;
-    
-    
-    
 }
 
-.HEX{
-    background-color: #926239;
-    color: white;
-    padding: 15px 10px;
+ul{
+    font-size: 0;
 }
-.white{
-    background-color: white;
-    color: #926239;
-    padding: 10px 10px;
-}
-
-footer{
-    top: 100vh;
-position: relative;
-
-    display: flex;
-
+li{
+    display: inline-block;
+    background-color: red;
+    padding: 10px;
     
-    
-}
-.button{
-    font-size: 30px;
-    border: 1px solid #926239;
-    color:#926239;
-    background-color: transparent;
-    border-radius: 7px;
-    padding: 5px 10px;
-    background-image: none;
+    font-size: 1rem;
 }
