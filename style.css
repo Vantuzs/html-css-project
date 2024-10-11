@@ -21,3 +21,36 @@ li{
     
     font-size: 1rem;
 }
+/* Задача прописать  медиазапит для экранов, ширина каких от 500 до 700пх */
+@media screen and (min-width: 500px)and (max-width: 700px)
+ {
+    ul{
+        font-size: 0;
+    }
+    li{
+        display: block;
+        background-color: rgb(47, 182, 47);
+        
+    }
+}
+
+/* Задача - прописать медиазапит для экранов, ширина которых до 200пх  */
+
+@media screen and (max-width: 200px) {
+    ul{
+        font-size: 0;
+    }
+    li{
+        display: inline-block;
+        background-color: aqua;
+    }
+    
+}
+
+
+
+
+
+
+/* max-width - ширина До каковото количества пикчелей */
+/* min-width - ширина От каковото количества  пикселей */
