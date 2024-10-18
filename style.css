@@ -1,56 +1,94 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+section {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cart {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.foto {
+  left: 10px;
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 10.3%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 3px 3px 3px rgb(139, 137, 137);
 }
 
-
-
-
-:root{
-    font-size: 16px;
+h1 {
+  padding: 15px;
+  padding-left: 25px;
 }
 
-ul{
-    font-size: 0;
-}
-li{
-    display: inline-block;
-    background-color: red;
-    padding: 10px;
-    
-    font-size: 1rem;
-}
-/* Задача прописать  медиазапит для экранов, ширина каких от 500 до 700пх */
-@media screen and (min-width: 500px)and (max-width: 700px)
- {
-    ul{
-        font-size: 0;
-    }
-    li{
-        display: block;
-        background-color: rgb(47, 182, 47);
-        
-    }
+.info {
+  padding-left: 25px;
+  padding-bottom: 3px;
 }
 
-/* Задача - прописать медиазапит для экранов, ширина которых до 200пх  */
-
-@media screen and (max-width: 200px) {
-    ul{
-        font-size: 0;
-    }
-    li{
-        display: inline-block;
-        background-color: aqua;
-    }
-    
+footer {
+  padding: 10px 3px 3px 25px;
+}
+button {
+  padding: 10px;
+  background-color: rgb(131, 103, 255);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(79, 58, 168);
 }
 
+.big {
+  padding-right: 5px;
+  font-weight: bold;
+}
+span {
+  font-weight: 500;
+}
 
+a {
+  text-decoration: none;
+  color: orange;
+  padding: 0 5px;
+  padding-top: 5px;
+}
+a:hover {
+  color: #ff5e24;
+}
+nav {
+  padding-left: 25px;
+}
 
+@media screen and (max-width: 380px) {
+  .cart {
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 200px;
+    height: 500px;
 
-
-
-/* max-width - ширина До каковото количества пикчелей */
-/* min-width - ширина От каковото количества  пикселей */
+    margin: 10px;
+  }
+  .foto {
+    top: 1%;
+  }
+}
